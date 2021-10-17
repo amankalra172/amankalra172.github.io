@@ -1,7 +1,6 @@
 import * as React from "react"
 import { PageProps, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import { FaStar } from "react-icons/fa"
 import {
   Container,
   Stack,
@@ -10,11 +9,7 @@ import {
   Box,
   Flex,
   Grid,
-  useColorModeValue,
   Link as ChakraLink,
-  Tag,
-  TagLeftIcon,
-  TagLabel,
   usePrefersReducedMotion,
 } from "@chakra-ui/react"
 import { Link } from "../components/link"
@@ -28,13 +23,6 @@ import { PrimaryButton, SubtleButton } from "../components/buttons"
 import { space } from "../constants/space"
 import { SEO } from "../components/seo"
 import { homepage } from "../constants/json-ld"
-
-type RepositoryInfo = {
-  stargazerCount: number
-  description: string
-  name: string
-  url: string
-}
 
 type DataProps = {
   posts: {
@@ -87,8 +75,6 @@ const openSourceRepos = [
 ]
 
 const Index: React.FC<PageProps<DataProps>> = ({ data }) => {
-  const primaryRepoBg = useColorModeValue(`brand.primaryBg`, `brand.dark.primaryBg`)
-  const secondaryRepoBg = useColorModeValue(`blueGray.100`, `blueGray.800`)
   const shouldReduceMotion = usePrefersReducedMotion()
   const [firstPost, ...rest] = data.posts.nodes
   const otherPosts = [...rest]
@@ -107,7 +93,8 @@ const Index: React.FC<PageProps<DataProps>> = ({ data }) => {
             <Heading as="h1">Hi, I’m Aman Kalra!</Heading>
             <Text variant="prominent" maxWidth="45ch" textAlign="center">
               <strong>Product Management Intern</strong> from Germany. <br />
-              I’m passionate about products and data! Curious about its place in the businesses and future sustainability.
+              I’m passionate about products and data! Curious about its place in the businesses and future
+              sustainability.
             </Text>
             <Text variant="prominent" maxWidth="40ch" textAlign="center">
               I’m currently working remotely at <ChakraLink href="https://www.main.dev">Main.Dev</ChakraLink> on the
@@ -257,13 +244,13 @@ const Index: React.FC<PageProps<DataProps>> = ({ data }) => {
           <Flex alignItems="center" flexDirection="column" py={space.paddingLarge}>
             <Heading as="h2">Loophole.Cloud</Heading>
             <Text variant="prominent" maxWidth="40ch" textAlign="center">
-            Working with one of the most enthusiastic team to build and maintain Loophole, accessible to everyone
-            fills me with joy.
+              Working with one of the most enthusiastic team to build and maintain Loophole, accessible to everyone
+              fills me with joy.
             </Text>
             <Spacer axis="vertical" size={20} />
             <Stack direction="column" width="100%" spacing={6}>
               <Flex justifyContent="space-between" alignItems="center">
-                <Badge variant="dark">Know More</Badge>
+                <Badge variant="dark">Links</Badge>
                 <SubtleButton isExternal to="https://loophole.cloud/">
                   Know More!
                 </SubtleButton>
