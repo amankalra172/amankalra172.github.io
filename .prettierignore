@@ -1,0 +1,16 @@
+.cache
+.idea
+.vscode
+.DS_Store
+node_modules
+*.toml
+results
+.github
+typings.d.ts
+index.d.ts
+cypress/e2e/build
+LICENSE
+*.txt
+**/static/**
+**/*.hbs
+coverage
