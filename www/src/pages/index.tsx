@@ -69,20 +69,20 @@ const cardGradients = [
 
 const openSourceRepos = [
   {
-    name: `gatsby-source-tmdb`,
-    url: `https://github.com/LekoArts/gatsby-source-tmdb`,
+    name: `Getting started`,
+    url: `https://loophole.cloud/blog/get-started-with-loophole`,
   },
   {
-    name: `thanks-contributors`,
-    url: `https://github.com/LekoArts/thanks-contributors`,
+    name: `Download`,
+    url: `https://loophole.cloud/download`,
   },
   {
-    name: `lekoarts-stats`,
-    url: `https://github.com/LekoArts/lekoarts-stats`,
+    name: `Docs`,
+    url: `https://loophole.cloud/docs`,
   },
   {
-    name: `portfolio-v2`,
-    url: `https://github.com/LekoArts/portfolio-v2`,
+    name: `Twitter`,
+    url: `https://twitter.com/loophole_cloud`,
   },
 ]
 
@@ -104,14 +104,14 @@ const Index: React.FC<PageProps<DataProps>> = ({ data }) => {
       <SkipNavContent>
         <FullWidthContainer variant="hero">
           <Stack align="center" spacing="5" py={space.paddingLarge}>
-            <Heading as="h1">Hi, I’m Lennart!</Heading>
+            <Heading as="h1">Hi, I’m Aman Kalra!</Heading>
             <Text variant="prominent" maxWidth="45ch" textAlign="center">
-              <strong>Software Engineer</strong> from Darmstadt, Germany. <br />
-              I’m passionate about working on open source products & building thriving communities around them.
+              <strong>Product Management Intern</strong> from Germany. <br />
+              I’m passionate about products and data! Curious about its place in the businesses and future sustainability.
             </Text>
             <Text variant="prominent" maxWidth="40ch" textAlign="center">
-              I’m currently working remotely at <ChakraLink href="https://www.gatsbyjs.com">Gatsby</ChakraLink> on the
-              open source project.
+              I’m currently working remotely at <ChakraLink href="https://www.main.dev">Main.Dev</ChakraLink> on the
+              open source project : <ChakraLink href="https://loophole.cloud/">Loophole</ChakraLink> .
             </Text>
           </Stack>
         </FullWidthContainer>
@@ -189,8 +189,8 @@ const Index: React.FC<PageProps<DataProps>> = ({ data }) => {
             </Stack>
             <Stack direction="column" width="100%" spacing={6}>
               <Flex justifyContent="space-between" alignItems="center">
-                <Badge variant="light">Art</Badge>
-                <SubtleButton to="/art">See all art</SubtleButton>
+                <Badge variant="light">NFTs</Badge>
+                <SubtleButton to="/nft">My Latest NFts</SubtleButton>
               </Flex>
               <Grid gridTemplateColumns={[`repeat(1, 1fr)`, null, `repeat(2, 1fr)`]} gap={[4, null, 8]}>
                 <Link
@@ -255,17 +255,17 @@ const Index: React.FC<PageProps<DataProps>> = ({ data }) => {
         </FullWidthContainer>
         <Container>
           <Flex alignItems="center" flexDirection="column" py={space.paddingLarge}>
-            <Heading as="h2">Open Source</Heading>
+            <Heading as="h2">Loophole.Cloud</Heading>
             <Text variant="prominent" maxWidth="40ch" textAlign="center">
-              Working in the open, interacting with the community & building projects that are accessible to everyone
-              fill me with joy.
+            Working with one of the most enthusiastic team to build and maintain Loophole, accessible to everyone
+            fills me with joy.
             </Text>
             <Spacer axis="vertical" size={20} />
             <Stack direction="column" width="100%" spacing={6}>
               <Flex justifyContent="space-between" alignItems="center">
-                <Badge variant="dark">Featured Projects</Badge>
-                <SubtleButton isExternal to="https://www.github.com/LekoArts">
-                  GitHub
+                <Badge variant="dark">Know More</Badge>
+                <SubtleButton isExternal to="https://loophole.cloud/">
+                  Know More!
                 </SubtleButton>
               </Flex>
               {/* <Grid gridTemplateColumns={[`1fr`, null, null, `2fr 1fr`]} gap={6}>
