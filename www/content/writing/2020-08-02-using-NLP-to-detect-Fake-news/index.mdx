@@ -1,0 +1,238 @@
+---
+title: "Using Machine Learning to detect fake news!"
+subtitle: ""
+date: 2020-08-02
+lastUpdated: 2021-08-07
+description: "Develop a machine learning model to identify when an article might be fake news."
+type: "tutorial"
+category: "Machine Learning"
+image: /og-images/theme-ui-plugin.png?v=1
+published: true
+---
+
+Data has become the center of today’s’ businesses. In this modern world, 1.7 megaBytes data is generated per second. Many technologies have evolved to use this massive data for a better world. Machine learning is one of them and today we plan to use it to detect fake news.
+
+![fake news](fake.jpg)
+
+## What exactly is fake news?
+
+Fake news is pieces of misinformation that are often incorporated to mislead people. Fake news is easy to spread as it carries no verification evidence. This is often done to further or impose certain ideas and is often achieved with political agendas.
+
+## How do we plan to solve it?
+
+This project is broken down into 5 steps, namely:
+
+1. Loading the data
+2. Format the data
+3. Tokenize the data
+4. Build our model
+5. Train multiple models
+
+Let us get started on detecting the fake news!
+
+### Loading the Data
+
+I have used the “Fake or Real News Dataset” from Kaggle : https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset .
+The dataset comprises 2 csv files, namely fake and true. Both the files are available on kaggle for download.
+
+```py
+df_fake = pd.read_csv('Fake.csv')
+df_true = pd.read_csv('True.csv')
+```
+
+The initial step would be to merge both the files to have one single file for both train and testing. However, before merging we need to add labels to it. We consider 1 for True and 0 for False. We introduce a new column called ‘class’.
+
+```py
+df_fake['class'] = 0
+df_true['class'] = 1
+```
+
+After doing that, we simply merge both the files.
+
+```py
+df_merge = pd.concat([df_fake, df_true], axis =0 )
+```
+
+### Format the data
+
+Data preprocessing is a vital step to build a good model. Let us see the columns we have :
+
+```py
+df_merge.columns
+```
+
+For simplicity, we remove the columns "title", "subject","date" and retain the text and class column for further processing.
+
+```py
+df = df_merge.drop(["title", "subject","date"], axis = 1)
+```
+
+Next we check for any null values,
+
+```py
+df.isnull().sum()
+```
+
+Great, we have no null values. Now let us replace the index column and have a cleaner dataset.
+
+```py
+df.reset_index(inplace = True)
+df.drop(["index"], axis = 1, inplace = True)
+```
+
+I have defined a function wordopt below that performs basic regex operations on the text columns and modifies text on the following parameters:
+
+1. Removes URLs and website links.
+2. Removes unwanted spacings.
+3. Replaces punctuations with a single space.
+4. Removes line spacings.
+5. Converts words in its lowercase.
+
+```py
+def wordopt(text):
+    text = text.lower()
+    text = re.sub('\[.*?\]', '', text)
+    text = re.sub("\\W"," ",text)
+    text = re.sub('https?://\S+|www\.\S+', '', text)
+    text = re.sub('<.*?>+', '', text)
+    text = re.sub('[%s]' % re.escape(string.punctuation), '', text)
+    text = re.sub('\\n', '', text)
+    text = re.sub('\w*\d\w*', '', text)
+    return text
+```
+
+This function is then applied to our text column,
+
+```py
+df["text"] = df["text"].apply(wordopt)
+```
+
+Before performing tokenization, we have one final step to do. Split the dataset into test and train. We consider having a 70 - 30 split.
+
+```py
+x = df['text']
+y = df['class']
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3)
+```
+
+### Tokenize the data
+
+We use TF IDF to convert the text input into vectors. The explanation of TF IDF is out of scope for this blog, however, you may refer to get a deeper understanding. We use sklearn library to perform the steps.
+
+```py
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+vectorization = TfidfVectorizer()
+xv_train = vectorization.fit_transform(x_train)
+xv_test = vectorization.transform(x_test)
+```
+
+Now, that we have the tokenized data, let’s build our first model.
+
+### Building the Model
+
+We plan to build 4 different models and then compare them to choose the best one.
+
+#### Logistic Regression
+
+```py
+from sklearn.linear_model import LogisticRegression
+
+LR = LogisticRegression()
+LR.fit(xv_train,y_train)
+```
+
+Currently, we use the predefined model parameters.
+
+```py
+pred_lr=LR.predict(xv_test)
+```
+
+Further on, we now try to find the score.
+
+```py
+LR.score(xv_test, y_test)
+```
+
+Lastly, let us take a look at the classification report:
+
+```py
+print(classification_report(y_test,pred_lr))
+```
+
+#### Decision Tree
+
+Performing similar modeling steps as above,
+
+```py
+from sklearn.tree import DecisionTreeClassifier
+
+DT = DecisionTreeClassifier()
+DT.fit(xv_train, y_train)
+```
+
+```py
+pred_dt = DT.predict(xv_test)
+```
+
+```py
+DT.score(xv_test, y_test)
+```
+
+We already see a slight improvement over Random Forest. The classification report of Decision tree is shown below:
+
+```py
+print(classification_report(y_test, pred_dt))
+```
+
+#### Gradient boosting classifier
+
+```py
+from sklearn.ensemble import GradientBoostingClassifier
+
+GBC = GradientBoostingClassifier(random_state=0)
+GBC.fit(xv_train, y_train)
+```
+
+```py
+pred_gbc = GBC.predict(xv_test)
+```
+
+```py
+GBC.score(xv_test, y_test)
+```
+
+The score of the gradient boosting classifier is similar to that of the decision tree. Let us look at the classification report to find more:
+
+```py
+print(classification_report(y_test, pred_gbc))
+```
+
+#### Random Forest
+
+```py
+from sklearn.ensemble import RandomForestClassifier
+
+RFC = RandomForestClassifier(random_state=0)
+RFC.fit(xv_train, y_train)
+```
+
+```py
+pred_rfc = RFC.predict(xv_test)
+```
+
+```py
+RFC.score(xv_test, y_test)
+```
+
+As noticed, Random forest outperforms all the above models. Checking the classification report below:
+
+```py
+print(classification_report(y_test, pred_rfc))
+```
+
+Now that we have trained different models, we can use them for evaluation on unseen or new data. You can find the complete code on the notebook here: https://bit.ly/3w9qljr
+
+Please note the models can be further improved by changing their hyperparameters. You can also experiment with considering both the titles and text for detecting fake news. The possibilities are endless.
+
+I hope this notebook was of help. Do let me know if you have any questions or used different methods to train your model.
