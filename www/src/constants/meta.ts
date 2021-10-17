@@ -1,9 +1,9 @@
 export const site = {
-  title: `Lennart Jörgens`,
-  titleDefault: `Lennart Jörgens - Software Engineer`,
-  url: `https://www.lekoarts.de`, // Without a trailing slash!
-  dataDomain: `lekoarts.de`,
-  description: `Lennart is a software engineer and passionate about working on open source products & building communities around them. He currently works at Gatsby on the open source project.`,
+  title: `Aman Kalra`,
+  titleDefault: `Aman Kalra - Aspiiring Product Manager`,
+  url: `https://www.amankalra.com`, // Without a trailing slash!
+  dataDomain: `amankalra.com`,
+  description: `Aman Kalra is an aspiring and passionate prdoduct manager currently working on open source product called Loophole.`,
   image: `/social/default-og-image.png?v=1`,
-  twitter: `@lekoarts_de`,
+  twitter: `@amankalra172`,
 }

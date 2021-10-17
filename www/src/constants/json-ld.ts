@@ -3,11 +3,11 @@ import { site } from "./meta"
 export const identity = {
   "@id": `${site.url}/#identity`,
   "@type": `Organization`,
-  alternateName: `LekoArts`,
+  alternateName: `AmanKalra`,
   description: site.description,
-  email: `hello@lekoarts.de`,
-  founder: `Lennart Jörgens`,
-  foundingDate: `2017-12-08`,
+  email: `hi@amankalra.com`,
+  founder: `Aman Kalra`,
+  foundingDate: `2020-06-08`,
   image: {
     "@type": `ImageObject`,
     height: `1024`,
@@ -21,24 +21,18 @@ export const identity = {
     width: `60`,
   },
   name: site.titleDefault,
-  sameAs: [
-    `https://twitter.com/lekoarts_de`,
-    `https://www.youtube.com/c/LeKoArtsDE`,
-    `https://github.com/LekoArts`,
-    `https://dribbble.com/LekoArts`,
-    `https://www.behance.net/lekoarts`,
-  ],
+  sameAs: [`https://twitter.com/amankalra172`, `https://github.com/amankalra172`],
   url: site.url,
 }
 
 export const creator = {
   "@id": `${site.url}/#creator`,
   "@type": `Organization`,
-  alternateName: `LekoArts`,
+  alternateName: `AmanKalra`,
   description: site.description,
-  email: `hello@lekoarts.de`,
-  founder: `Lennart Jörgens`,
-  foundingDate: `2017-12-08`,
+  email: `hi@amankalra.com`,
+  founder: `Aman Kalra`,
+  foundingDate: `2020-06-08`,
   image: {
     "@type": `ImageObject`,
     height: `1024`,
