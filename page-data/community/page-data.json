@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-category-name-tsx",
+    "path": "/community",
+    "result": {"data":{"category":{"name":"Community","description":"Building an engaging & inclusive community is hard and takes work. From the perspective of an open source maintainer I want to help you achieve this goal.","gradient":"linear(to-t, green.500, green.900)","slug":"/community"},"posts":{"nodes":[],"totalCount":0}},"pageContext":{"id":"aae1455d-1ece-5306-b615-621a33974a23","name":"Community","__params":{"name":"community"}}},
+    "staticQueryHashes": ["1010836923","2299006781","3050858678","4184542181","712324210"]}

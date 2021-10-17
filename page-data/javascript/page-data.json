@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-category-name-tsx",
+    "path": "/javascript",
+    "result": {"data":{"category":{"name":"JavaScript","description":"At this point one can build nearly everything with JavaScript. I write about different frameworks, supersets & experiments here, including TypeScript.","gradient":"linear(to-t, yellow.500, yellow.900)","slug":"/javascript"},"posts":{"nodes":[{"title":"Setting up a yarn Workspace with TypeScript, ESLint & Cypress","date":"2019-08-05T00:00:00.000Z","slug":"/javascript/setting-up-a-yarn-workspace-with-typescript-eslint-and-cypress","subtitle":"A robust solution for multi-package repositories","description":"A guide on how to set up a multi-package repository with TypeScript support, linting with ESLint and end-to-end testing with Cypress. Great stack to build front-end packages or Gatsby themes."}],"totalCount":1}},"pageContext":{"id":"ba4330d1-6f82-5962-bf93-2d055abe26b4","name":"JavaScript","__params":{"name":"javascript"}}},
+    "staticQueryHashes": ["1010836923","2299006781","3050858678","4184542181","712324210"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-tutorials-tsx",
+    "path": "/tutorials",
+    "result": {"data":{"posts":{"nodes":[{"title":"Setting up a yarn Workspace with TypeScript, ESLint & Cypress","date":"2019-08-05T00:00:00.000Z","slug":"/javascript/setting-up-a-yarn-workspace-with-typescript-eslint-and-cypress","subtitle":"A robust solution for multi-package repositories","description":"A guide on how to set up a multi-package repository with TypeScript support, linting with ESLint and end-to-end testing with Cypress. Great stack to build front-end packages or Gatsby themes."},{"title":"Tips & Tricks for Gatsby","date":"2019-03-02T00:00:00.000Z","slug":"/gatsby/tips-and-tricks-for-gatsby","subtitle":null,"description":"A collection of short, but useful quick tips shared by me and the community about Gatsby. From GraphQL over local development to deployment."}]}},"pageContext":{}},
+    "staticQueryHashes": ["1010836923","2299006781","3050858678","4184542181","712324210"]}
