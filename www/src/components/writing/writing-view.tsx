@@ -112,18 +112,18 @@ const WritingView: React.FC<WritingViewDataProps> = ({ post, pathname, children,
             alignItems={[`flex-start`, `center`]}
           >
             <Box>
-              <ExternalLink
+              {/* <ExternalLink
                 fontSize={[`md`, null, null, `1.125rem`]}
                 fontWeight="medium"
                 href={`https://github.com/LekoArts/portfolio-v2/edit/main/www/content/writing/${post.parent.parent.relativePath}`}
               >
                 Edit on GitHub
-              </ExternalLink>
+              </ExternalLink> */}
               {` `}-{` `}
               <ExternalLink
                 fontSize={[`md`, null, null, `1.125rem`]}
                 fontWeight="medium"
-                href={`https://www.twitter.com/search?q=${encodeURIComponent(`https://www.lekoarts.de${pathname}`)}`}
+                href={`https://www.twitter.com/search?q=${encodeURIComponent(`https://www.amankalra.com${pathname}`)}`}
               >
                 Discuss on Twitter
               </ExternalLink>
