@@ -2,48 +2,54 @@
     name: Writing
     link: /writing
   items:
-    - name: Digital Garden
-      link: /garden
-    - name: Tutorials
+    - name: Data Science Tutorials
       link: /tutorials
-    - name: React
-      link: /react
-    - name: Community
-      link: /community
+    - name: Product Management
+      link: /product
+    - name: Loophole
+      link: /loophole
+    - name: MLOps
+      link: /mlops
+    - name: Digital Garden
+      link: garden
 - heading:
-    name: Art
-    link: /art
+    name: NFTs
+    link: /nfts
   items:
-    - name: Design
-      link: /art/design
-    - name: 3D Art
-      link: /art/3d
-    - name: Photography
-      link: /art/photography
+    - name: OpenSea
+      link: https://opensea.io/cryptominder
+      isExternal: true
+    - name: Mintable
+      link: https://mintable.app/u/cryptominder
+      isExternal: true
 - heading:
     name: About
     link: /about
   items:
-    - name: Appearances
-      link: /appearances
+    - name: Resume
+      link: /resume.pdf
     - name: Projects
       link: /projects
-    - name: Uses
-      link: /uses
+    - name: Shaadi Mubarak
+      link: https://www.theoceanskyevents.com/shaadi-mubarak
+      isExternal: true
+    - name: The Storii
+      link: https://www.thestorii.com/
+      isExternal: true
 - heading:
     name: Social
   items:
     - name: Email
-      link: mailto:hello@lekoarts.de
+      link: mailto:hi@amankalra.com
       isExternal: true
     - name: Twitter
-      link: https://www.twitter.com/lekoarts_de
+      link: https://www.twitter.com/amankalra172
       isExternal: true
     - name: GitHub
-      link: https://www.github.com/LekoArts
+      link: https://www.github.com/amankalra172
       isExternal: true
     - name: LinkedIn
-      link: https://www.linkedin.com/in/lennart-joergens/
+      link: https://www.linkedin.com/in/amankalra172/
       isExternal: true
     - name: RSS
       link: /rss.xml

@@ -46,7 +46,7 @@ export const Footer: React.FC = () => {
             })}
           </Flex>
           <Flex flexDirection={[`column`, `row`]} textAlign="center" alignItems="center" justifyContent="space-between">
-            <div>&copy; {new Date().getFullYear()} by lekoarts.de. All rights reserved.</div>
+            <div>&copy; {new Date().getFullYear()} by amankalra.com. All rights reserved.</div>
             <div>
               <Link to="/privacy-policy">Privacy Policy</Link>. <Link to="/legal-notice">Legal Notice</Link>.
             </div>

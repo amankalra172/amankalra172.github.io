@@ -1,6 +1,6 @@
 - name: Writing
   link: /writing
-- name: Art
-  link: /art
 - name: About
   link: /about
+- name: Resume
+  link: /Resume.pdf

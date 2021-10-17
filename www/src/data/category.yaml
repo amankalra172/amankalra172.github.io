@@ -1,20 +1,16 @@
-- name: Community
-  description: Building an engaging & inclusive community is hard and takes work. From the perspective of an open source maintainer I want to help you achieve this goal.
+- name: Product
+  description: My interests are deep-rooted in the field of product management and utilizing data for the betterment of consumers, social service, and entrepreneurship to explore various working aspects of the current dynamic world.
   gradient: linear(to-t, green.500, green.900)
   image: ./category-images/placeholder.jpg
-- name: Design
-  description: One of my hobbies is creating digital art & designs with various tools. This space got so much more accessible to more folks over the last couple of years and I hope to also spark some interest!
+- name: MLOps
+  description: Machine Learning in Operations has been my latest learning and exploration area. I am currently wiritng my thesis in the same topic. I explore and blog on various tools and industry standards followed in the production of machine learning.
   gradient: linear(to-t, indigo.600, indigo.900)
   image: ./category-images/placeholder.jpg
-- name: Gatsby
-  description: Gatsby is a React frontend framework for building fast & modern apps. It's super extensible and customizable and a great way to learn React.
+- name: Machine Learning
+  description: I have got a chance to work on various projects in my Master's journey and professional life. Along with that, curiosity to learn has led me to explore other repositories on Github.  Few of those projects are explained as tutorials or blogs in this section!
   gradient: linear(to-t, violet.500, violet.900)
   image: ./category-images/placeholder.jpg
-- name: JavaScript
-  description: At this point one can build nearly everything with JavaScript. I write about different frameworks, supersets & experiments here, including TypeScript.
-  gradient: linear(to-t, yellow.500, yellow.900)
-  image: ./category-images/placeholder.jpg
-- name: React
-  description: React is a JavaScript library for building user interfaces. I write about the ecosystem and its tools, about code patterns, and React in general.
+- name: Loophole
+  description: Loophole allows user to make web applications public without actually deploying on a cloud service. I share various tips and triks on it's usage.
   gradient: linear(to-t, cyan.400, cyan.900)
   image: ./category-images/placeholder.jpg
