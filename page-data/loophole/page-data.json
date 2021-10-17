@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-category-name-tsx",
+    "path": "/loophole",
+    "result": {"data":{"category":{"name":"Loophole","description":"Loophole allows user to make web applications public without actually deploying on a cloud service. I share various tips and triks on it's usage.","gradient":"linear(to-t, cyan.400, cyan.900)","slug":"/loophole"},"posts":{"nodes":[{"title":"Get Started with Loophole!","date":"2020-10-10T00:00:00.000Z","slug":"/loophole/get-started-with-loophole","subtitle":null,"description":"Aspire to expose your localhost to the Internet with minimal effort? Do you wish to avoid going through the tedious deployment process? Let me introduce you to Loophole."}],"totalCount":1}},"pageContext":{"id":"ba4330d1-6f82-5962-bf93-2d055abe26b4","name":"Loophole","__params":{"name":"loophole"}}},
+    "staticQueryHashes": ["1010836923","2299006781","3050858678","4184542181","712324210"]}

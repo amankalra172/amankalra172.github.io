@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-category-name-tsx",
+    "path": "/mlops",
+    "result": {"data":{"category":{"name":"MLOps","description":"Machine Learning in Operations has been my latest learning and exploration area. I am currently wiritng my thesis in the same topic. I explore and blog on various tools and industry standards followed in the production of machine learning.","gradient":"linear(to-t, indigo.600, indigo.900)","slug":"/mlops"},"posts":{"nodes":[],"totalCount":0}},"pageContext":{"id":"9022646b-ff1d-5aba-b7e8-f27b6012ac14","name":"MLOps","__params":{"name":"mlops"}}},
+    "staticQueryHashes": ["1010836923","2299006781","3050858678","4184542181","712324210"]}

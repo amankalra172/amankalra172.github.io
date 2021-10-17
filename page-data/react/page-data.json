@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-category-name-tsx",
-    "path": "/react",
-    "result": {"data":{"category":{"name":"React","description":"React is a JavaScript library for building user interfaces. I write about the ecosystem and its tools, about code patterns, and React in general.","gradient":"linear(to-t, cyan.400, cyan.900)","slug":"/react"},"posts":{"nodes":[],"totalCount":0}},"pageContext":{"id":"5afbe00c-9754-5b55-a9bb-bf4a64cbb5a7","name":"React","__params":{"name":"react"}}},
-    "staticQueryHashes": ["1010836923","2299006781","3050858678","4184542181","712324210"]}
