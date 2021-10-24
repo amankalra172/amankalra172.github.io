@@ -177,12 +177,12 @@ const Index: React.FC<PageProps<DataProps>> = ({ data }) => {
             <Stack direction="column" width="100%" spacing={6}>
               <Flex justifyContent="space-between" alignItems="center">
                 <Badge variant="light">NFTs</Badge>
-                <SubtleButton to="/nft">My Latest NFts</SubtleButton>
+                <SubtleButton to="/nfts">My Latest NFts</SubtleButton>
               </Flex>
               <Grid gridTemplateColumns={[`repeat(1, 1fr)`, null, `repeat(2, 1fr)`]} gap={[4, null, 8]}>
                 <Link
-                  to="/art/photography"
-                  aria-label="View my photography"
+                  to="/nfts"
+                  aria-label="Read about NFTs"
                   borderRadius="lg"
                   _hover={{ boxShadow: shouldReduceMotion ? `outline` : null }}
                 >
@@ -197,7 +197,7 @@ const Index: React.FC<PageProps<DataProps>> = ({ data }) => {
                     }}
                   >
                     <StaticImage
-                      src="../images/pages-index-photography-preview.jpg"
+                      src="../images/pages-index-nfts-preview-1.jpg"
                       alt=""
                       layout="constrained"
                       quality={90}
@@ -209,8 +209,8 @@ const Index: React.FC<PageProps<DataProps>> = ({ data }) => {
                   </MotionBox>
                 </Link>
                 <Link
-                  to="/art/3d"
-                  aria-label="View my 3D art"
+                  to="/nfts"
+                  aria-label="Read about NFTs"
                   borderRadius="lg"
                   _hover={{ boxShadow: shouldReduceMotion ? `outline` : null }}
                 >
@@ -225,7 +225,7 @@ const Index: React.FC<PageProps<DataProps>> = ({ data }) => {
                     }}
                   >
                     <StaticImage
-                      src="../images/pages-index-3d-preview.jpg"
+                      src="../images/pages-index-nfts-preview-2.jpg"
                       alt=""
                       layout="constrained"
                       quality={90}
