@@ -97,8 +97,8 @@ const Index: React.FC<PageProps<DataProps>> = ({ data }) => {
               sustainability.
             </Text>
             <Text variant="prominent" maxWidth="40ch" textAlign="center">
-              I’m currently working remotely at <ChakraLink href="https://www.main.dev">Main.Dev</ChakraLink> on the
-              open source project : <ChakraLink href="https://loophole.cloud/">Loophole</ChakraLink> .
+              I’m currently working at <ChakraLink href="https://www.main.dev">Main.Dev</ChakraLink> on their open
+              source project : <ChakraLink href="https://loophole.cloud/">Loophole</ChakraLink>.
             </Text>
           </Stack>
         </FullWidthContainer>

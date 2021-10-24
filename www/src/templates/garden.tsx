@@ -133,7 +133,6 @@ const GardenTemplate: React.FC<PageProps<DataProps>> = ({ data: { garden }, loca
               >
                 Edit on GitHub
               </ExternalLink> */}
-              {` `}-{` `}
               <ExternalLink
                 fontSize={[`md`, null, null, `1.125rem`]}
                 fontWeight="medium"
