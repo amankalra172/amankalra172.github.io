@@ -38,8 +38,8 @@ export const CategoryView: React.FC<CategoryViewProps> = ({ posts, children }) =
         ) : (
           <Text textStyle="prominent">
             Sadly there's no content for this category available yet. Be sure to follow me on{` `}
-            <ExternalLink href="https://twitter.com/lekoarts_de">Twitter</ExternalLink> to not miss any announcements
-            about new posts :)
+            <ExternalLink href="https://www.linkedin.com/in/amankalra172/">Linkedin</ExternalLink> to not miss any
+            announcements about new posts :)
           </Text>
         )}
       </Container>
