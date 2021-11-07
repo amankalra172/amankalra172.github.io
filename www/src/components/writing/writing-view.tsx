@@ -119,7 +119,7 @@ const WritingView: React.FC<WritingViewDataProps> = ({ post, pathname, children,
               >
                 Edit on GitHub
               </ExternalLink> */}
-              {` `}-{` `}
+
               <ExternalLink
                 fontSize={[`md`, null, null, `1.125rem`]}
                 fontWeight="medium"
