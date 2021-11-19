@@ -1,0 +1,26 @@
+---
+title: "Breaking down Machine Learning"
+date: 2021-11-17
+lastUpdated: 2021-11-17
+icon: "python"
+tags:
+  - MLOPs
+---
+
+I often used to be fascinated when my machine learning model accuracy used to hit anything above 90%, that was a moment of joy and often ended with me closing my jupyter notebook and feeling joyful for the day. Not until when I started deploying my first simple models on the cloud. My current research topic revolves around understanding the current limitations and dynamics at the industrial machine learning life cycle along with narrowing the usage of the right open source tools available to help.
+
+The first two weeks of November have been filled with learning for me when I decided to interview top data scientists and question them about the challenges they faced while working with machine learning at the production scale. I have summarised them in the best of my caliber for you down here.
+
+1. Machine learning leverages metrics and performances. To select the best model, multiple folds of experiments are performed, resulting in metric tracking multiple times manually. Tracking these metrics is often a complex and confusing task. Weights and Biases is an example of such a tool that helps in easing this problem.
+
+2. Data is the core of any machine learning problem. It is rightly said, that a data scientist spends 80% of the time making sure the right data is fed to the model. Often, these data are subject to change and are not versioned. This further adds to the complexity as to reproduce results not only code but data is also required. Similar to code, data also evolves.
+
+3. Reproducing the results is an important aspect of machine learning which is often overlooked. A common challenge faced by many practitioners is the difficulty to reproduce a model from the past as no model versioning or model registry is available.
+
+4. Another bad practice in machine learning is a single model pkl file, the result of a manual process rather than the entire pipeline. An entire pipeline makes reproducibility simple and further decreases dependencies in case of data drift or hyperparameter tuning.
+
+5. Manual deployments result in difficult retraining procedures. Model retraining could be necessary due to model staleness or even concept drift. Usually, in cases of a manual process, deploying ML models takes a lot of time and has less frequent releases.
+
+6. There is neither CI nor CD in the workflow as operations and development are considered as two distinct branches of the whole process.
+
+Well, I could only touch the tip of the iceberg and I believe there are more challenges that industries face and there needs to be a fine way to propagate these changes to tool builders and academic researchers for further improvements. If you have challenges in deploying your models, feel free to let me know. I would be happy to append them to this list and help reach out to a wider set of practitioners.
