@@ -92,13 +92,13 @@ const Index: React.FC<PageProps<DataProps>> = ({ data }) => {
           <Stack align="center" spacing="5" py={space.paddingLarge}>
             <Heading as="h1">Hi, I’m Aman Kalra!</Heading>
             <Text variant="prominent" maxWidth="45ch" textAlign="center">
-              <strong>Product Management Intern</strong> from Germany. <br />
+              <strong>Technology enthiusiast with interest in product!</strong> <br />
               I’m passionate about products and data! Curious about its place in the businesses and future
               sustainability.
             </Text>
             <Text variant="prominent" maxWidth="40ch" textAlign="center">
-              I’m currently working at <ChakraLink href="https://www.main.dev">Main.Dev</ChakraLink> on their open
-              source project : <ChakraLink href="https://loophole.cloud/">Loophole</ChakraLink>.
+              Read more about <ChakraLink href="/machine-learning">machine learning</ChakraLink> or{` `}
+              <ChakraLink href="/product">product</ChakraLink>.
             </Text>
           </Stack>
         </FullWidthContainer>

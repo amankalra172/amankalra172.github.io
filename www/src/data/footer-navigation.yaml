@@ -26,8 +26,6 @@
     name: About
     link: /about
   items:
-    - name: Resume
-      link: /resume.pdf
     - name: Projects
       link: /projects
     - name: Shaadi Mubarak

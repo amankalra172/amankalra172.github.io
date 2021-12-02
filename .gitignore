@@ -12,6 +12,7 @@ fabric.properties
 .LSOverride
 Icon
 ._*
+public
 .DocumentRevisions-V100
 .fseventsd
 .Spotlight-V100
@@ -37,7 +38,7 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 *.lnk
-node_modules
+node_modules*
 .cache
 .vscode
 .env
