@@ -81,7 +81,7 @@ const SubtleButton: React.FC<{ to: string; isExternal?: boolean }> = ({ children
 }
 
 const getTwitterShareLink = (link, message) =>
-  `https://twitter.com/intent/tweet/?text=${encodeURIComponent(message)}&via=lekoarts_de&url=${encodeURIComponent(
+  `https://twitter.com/intent/tweet/?text=${encodeURIComponent(message)}&via=amankalra172&url=${encodeURIComponent(
     link
   )}`
 
@@ -106,7 +106,7 @@ const ShareAnywhereButton = ({ link, message, variant = `primary` }) => {
     navigator
       .share({
         title: message,
-        text: `${message} by Lennart Jörgens (@lekoarts_de)`,
+        text: `${message} by Aman Kalra (@amankalra172)`,
         url: link,
       })
       // eslint-disable-next-line no-console
