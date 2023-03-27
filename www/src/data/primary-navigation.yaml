@@ -1,3 +1,6 @@
+- name: GrowthAI
+  link: https://growth.amankalra.com
+  isExternal: true 
 - name: Writing
   link: /writing
 - name: About
