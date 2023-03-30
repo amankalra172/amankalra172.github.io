@@ -26,8 +26,8 @@
     name: About
     link: /about
   items:
-    - name: Projects
-      link: /projects
+    - name: Growth AI
+      link: https://growth-ai.amankalra.com/
     - name: Shaadi Mubarak
       link: https://www.theoceanskyevents.com/shaadi-mubarak
       isExternal: true

@@ -93,14 +93,15 @@ const Index: React.FC<PageProps<DataProps>> = ({ data }) => {
             <Heading as="h1">Hi, I’m Aman Kalra!</Heading>
             <Text variant="prominent" maxWidth="45ch" textAlign="center">
               <strong>Technology enthiusiast with interest in product!</strong> <br />
+            </Text>
+            <Text variant="prominent" maxWidth="45ch" textAlign="center">
               I’m passionate about products and data! Curious about its place in the businesses and future
               sustainability.
             </Text>
             <Text variant="prominent" maxWidth="40ch" textAlign="center">
-              Read more about <ChakraLink href="/machine-learning">machine learning</ChakraLink> or{` `}
-              <ChakraLink href="/product">product</ChakraLink>.
+            &#x1F680; Check out my recent project : <ChakraLink href="https://growth-ai.amankalra.com/" target="_blank"> Growth AI</ChakraLink>
             </Text>
-          </Stack>
+          </Stack> 
         </FullWidthContainer>
         <FullWidthContainer variant="light">
           <Stack alignItems="flex-start" spacing={24} py={space.paddingMedium}>
