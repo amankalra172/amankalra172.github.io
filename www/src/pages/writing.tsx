@@ -34,7 +34,7 @@ const Writing: React.FC<PageProps<WritingProps>> = ({ data: { posts } }) => (
             <Text variant="prominent" maxWidth="45ch" textAlign="center">
               So far I’ve written {posts.totalCount} longform tutorials & articles. For more compact content visit my
               {` `}
-              <Link to="/garden">Digital Garden</Link>. <ChakraLink href="/rss.xml">RSS</ChakraLink>.
+              <Link to="/garden">Digital Garden</Link>.
             </Text>
           </Stack>
           <Grid

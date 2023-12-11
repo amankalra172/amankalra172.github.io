@@ -2,10 +2,6 @@
   description: My interests are deep-rooted in the field of product management and utilizing data for the betterment of consumers, social service, and entrepreneurship to explore various working aspects of the current dynamic world.
   gradient: linear(to-t, green.500, green.900)
   image: ./category-images/placeholder.jpg
-- name: MLOps
-  description: Machine Learning in Operations has been my latest learning and exploration area. I am currently wiritng my thesis in the same topic. I explore and blog on various tools and industry standards followed in the production of machine learning.
-  gradient: linear(to-t, indigo.600, indigo.900)
-  image: ./category-images/placeholder.jpg
 - name: Machine Learning
   description: I have got a chance to work on various projects in my Master's journey and professional life. Along with that, curiosity to learn has led me to explore other repositories on Github.  Few of those projects are explained as tutorials or blogs in this section!
   gradient: linear(to-t, violet.500, violet.900)

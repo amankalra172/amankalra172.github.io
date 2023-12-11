@@ -1,20 +1,18 @@
 - heading:
     name: Writing
-    link: /writing
+    link: /writing/
   items:
-    - name: Data Science Tutorials
-      link: /tutorials
     - name: Product Management
-      link: /product
-    - name: Loophole
-      link: /loophole
-    - name: MLOps
-      link: /mlops
+      link: /product/
+    - name: Machine Learning
+      link: /tutorials/
+    - name: Loophole.Cloud
+      link: /loophole/
     - name: Digital Garden
-      link: garden
+      link: /garden/
 - heading:
     name: NFTs
-    link: /nfts
+    link: /nfts/
   items:
     - name: OpenSea
       link: https://opensea.io/cryptominder
@@ -24,7 +22,7 @@
       isExternal: true
 - heading:
     name: About
-    link: /about
+    link: /about/
   items:
     - name: Growth AI
       link: https://growth-ai.amankalra.com/
