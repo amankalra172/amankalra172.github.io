@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import { PRICING_MODELS, NOTEBOOK_PRICING, WORKFLOW_PRICING, DREMIO_PRICING } from './data/pricing';
 import type { Provider, PricingModel } from './data/pricing';
 import { ThemeToggle } from './components/ThemeToggle';
@@ -144,7 +144,7 @@ function AppContent() {
 
 function App() {
   return (
-    <Router basename={import.meta.env.BASE_URL}>
+    <Router>
       <AppContent />
     </Router>
   );
