@@ -78,7 +78,7 @@ export const HowItWorksPage: React.FC = () => {
                         </div>
                         <div className="flex-1">
                             <img
-                                src="/images/step1-navigation.png"
+                                src={`${import.meta.env.BASE_URL}images/step1-navigation.png`}
                                 alt="Navigation Cards"
                                 className="rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 w-full h-auto"
                             />
@@ -112,7 +112,7 @@ export const HowItWorksPage: React.FC = () => {
                         </div>
                         <div className="flex-1">
                             <img
-                                src="/images/step2-config.png"
+                                src={`${import.meta.env.BASE_URL}images/step2-config.png`}
                                 alt="Configuration Sliders"
                                 className="rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 w-full h-auto"
                             />
@@ -142,7 +142,7 @@ export const HowItWorksPage: React.FC = () => {
                         </div>
                         <div className="flex-1">
                             <img
-                                src="/images/step3-results.png"
+                                src={`${import.meta.env.BASE_URL}images/step3-results.png`}
                                 alt="TCO Results"
                                 className="rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 w-full h-auto"
                             />

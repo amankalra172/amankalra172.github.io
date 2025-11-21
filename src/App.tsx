@@ -86,13 +86,13 @@ function AppContent() {
             <Link to="/" className="h-8 w-auto">
               {/* Light Mode Logo (Navy Blue) - Shown when NOT dark */}
               <img
-                src="/logos/stackit-logo-light.png"
+                src={`${import.meta.env.BASE_URL}logos/stackit-logo-light.png`}
                 alt="STACKIT Logo"
                 className="h-full w-auto object-contain block dark:hidden"
               />
               {/* Dark Mode Logo (White) - Shown when dark */}
               <img
-                src="/logos/stackit-logo-dark.png"
+                src={`${import.meta.env.BASE_URL}logos/stackit-logo-dark.png`}
                 alt="STACKIT Logo"
                 className="h-full w-auto object-contain hidden dark:block"
               />
@@ -144,7 +144,7 @@ function AppContent() {
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <AppContent />
     </Router>
   );
