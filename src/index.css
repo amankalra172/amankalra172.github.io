@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-stackit-primary: #004E5A;
+  --color-stackit-secondary: #96D700;
+
+  --color-stackit-50: #f2f9fa;
+  --color-stackit-100: #e1f2f4;
+  --color-stackit-200: #c6e6ea;
+  --color-stackit-300: #9fd3d9;
+  --color-stackit-400: #71b8c1;
+  --color-stackit-500: #4e9ca6;
+  --color-stackit-600: #397e88;
+  --color-stackit-700: #31666e;
+  --color-stackit-800: #2d555b;
+  --color-stackit-900: #28474c;
+  --color-stackit-950: #172e32;
+}
+
+/* Force dark mode selector strategy */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}

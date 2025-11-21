@@ -1,0 +1,62 @@
+[
+  {
+    "provider": "STACKIT",
+    "currency": "EUR",
+    "compute": {
+      "vcpuPerHour": 11111,
+      "ramGBPerHour": 0.02
+    },
+    "storage": {
+      "standardGBPerMonth": 0.1
+    },
+    "transfer": {
+      "ingressGB": 0,
+      "egressGB": 0
+    }
+  },
+  {
+    "provider": "GCP",
+    "currency": "EUR",
+    "compute": {
+      "vcpuPerHour": 0.06,
+      "ramGBPerHour": 0.025
+    },
+    "storage": {
+      "standardGBPerMonth": 0.12
+    },
+    "transfer": {
+      "ingressGB": 0,
+      "egressGB": 0.2
+    }
+  },
+  {
+    "provider": "AWS",
+    "currency": "EUR",
+    "compute": {
+      "vcpuPerHour": 0.055,
+      "ramGBPerHour": 0.022
+    },
+    "storage": {
+      "standardGBPerMonth": 0.09
+    },
+    "transfer": {
+      "ingressGB": 0,
+      "egressGB": 0.09
+    }
+  },
+  {
+    "provider": "Azure",
+    "currency": "EUR",
+    "compute": {
+      "vcpuPerHour": 0.058,
+      "ramGBPerHour": 0.024
+    },
+    "storage": {
+      "standardGBPerMonth": 0.11
+    },
+    "transfer": {
+      "ingressGB": 0,
+      "egressGB": 0.08
+    }
+  }
+]
